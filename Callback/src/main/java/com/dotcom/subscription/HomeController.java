@@ -41,7 +41,7 @@ public class HomeController {
 	
 								
 	@PostConstruct
-	public void createEndpointSubscription() throws IOException {
+	public void createSubscription() throws IOException {
 		
 		CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
 		credentialsProvider.setCredentials(AuthScope.ANY, new UsernamePasswordCredentials(login, password));
