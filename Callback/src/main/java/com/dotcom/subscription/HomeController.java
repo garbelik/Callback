@@ -62,11 +62,6 @@ public class HomeController {
 		HttpResponse response;
 		response = httpClient.execute(post);
 
-		List<Header> httpHeaders = Arrays.asList(post.getAllHeaders());        
-	    for (Header header : httpHeaders) {
-	        System.out.println("Headers.. name,value:"+header.getName() + "," + header.getValue());
-	    }
-
 		logger.info(EntityUtils.toString(post.getEntity()));
 		logger.info(EntityUtils.toString(response.getEntity()));
 
